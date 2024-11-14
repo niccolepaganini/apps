@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Погода в Алматы</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="weather-container">
+    <header>
+      <h1>Погода в Алматы</h1>
+    </header>
+
+    <div class="current-weather">
+      <h3>Погода на сегодня</h3>
+      <div id="today-weather" class="weather-box">
+        <h4 id="today-date">Загрузка...</h4>
+        <p id="today-condition">Загрузка...</p>
+        <p id="today-temperature">Загрузка...</p>
+        <p id="today-humidity">Загрузка...</p>
+        <p id="today-wind-speed">Загрузка...</p>
+        <img id="today-icon" alt="Weather Icon">
+      </div>
+    </div>
+
+    
+    <div class="next-day-weather">
+      <h3>Погода на завтра</h3>
+      <div id="tomorrow-weather" class="weather-box">
+        <h4 id="tomorrow-date">Загрузка...</h4>
+        <p id="tomorrow-condition">Загрузка...</p>
+        <p id="tomorrow-temperature">Загрузка...</p>
+        <p id="tomorrow-humidity">Загрузка...</p>
+        <p id="tomorrow-wind-speed">Загрузка...</p>
+        <img id="tomorrow-icon" alt="Weather Icon">
+      </div>
+    </div>
+
+    <div class="weekly-forecast">
+      <h3>Прогноз на неделю</h3>
+      <div id="weekly-forecast-list" class="forecast-list"></div>
+    </div>
+
+    <div class="monthly-forecast">
+      <h3>Прогноз на месяц</h3>
+      <div id="monthly-forecast-list" class="monthly-forecast-list"></div>
+    </div>
+
+    <div class="unit-toggle">
+      <button onclick="toggleUnits()">Переключить °C/°F</button>
+    </div>
+  </div>
+
+  <script src="weather.js".js"></script>
+</body>
+</html>
